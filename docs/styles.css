@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anek Devanagari";
+}
+html {
+    scroll-behavior: smooth;
+}
+#home{
+    background: linear-gradient( rgba(0,0,0, .2), rgba(0,0,0, .2)), url("images/WallpaperDog.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+#home .content header{
+    background-color: rgba(0,0,0, .7);
+    position: fixed;
+    width: 110%;
+    z-index: 2;
+    top: 0;
+    
+}
+#home .content header .content-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 3;
+}
+#home .content header .content-header h1{
+    text-align: center;
+    color: #93ffa1;
+    z-index: 4;
+}
+#home .content-header .horizontal-menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+#home .content-header .horizontal-menu >li >a{
+    display: block;
+    padding: 10px 20px;
+    width: 200px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    z-index: 6;
+}
+.horizontal-menu >li:hover{
+    background-color: #93ffa1;
+}
+.vertical-menu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0,0,0, .7);
+    z-index: 7;
+}
+#particle-js{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+/*  .vertical-item-selected{
+    background-color: #599876;
+}  */
+.horizontal-menu li:hover .vertical-menu{
+    display: block;
+    z-index: 9;
+}
+.vertical-menu li:hover{
+    background-color: #599876;
+}
+.vertical-menu li a{
+    display: block;
+    color: #fff;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    z-index: 10;
+}
+#home .content .presentation{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    margin-top: -100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+   
+}
+#home .content .presentation .welcome{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#home .content .presentation h2{
+    font-size: 48px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#home .content .presentation h2 span{
+    color: #93ffa1;
+}
+#home .content .presentation .description{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* #home .content .presentation a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 6px 12px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+} */
+
+#home .content .presentation a:hover{
+    background-color: #599876;
+}
+#home .content header .content-header .social a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: 10px;
+    font-size: 25px
+}
+#home .content header .content-header .social a:hover{
+    color: #599876;
+}
+#icono-nav{
+    color: #fff;
+    display: none;
+}
+
+/*section Desing*/
+
+#designs{
+    max-width: auto;
+    margin: auto;
+    padding: 100px 15px;
+    background-image: linear-gradient(to bottom, #000000, #1e013f);  
+    z-index: 99;
+    
+}
+
+#designs .title-section{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #93ffa1;
+    
+}
+
+#designs .fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+    
+}
+
+#designs .fila .project{
+    max-width: 400px;
+    /* border: 2px solid #93ffa1; */
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+/*overlays*/
+
+#overlay1 {
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .9000);
+    cursor: pointer;
+    z-index: 1;
+}
+
+#overlay2 {
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .9000);
+    cursor: pointer;
+    z-index: 2;
+}
+
+#overlay3 {
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .9000);
+    cursor: pointer;
+    z-index: 3;
+}
+
+#overlay4 {
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .9000);
+    cursor: pointer;
+    z-index: 4;
+}
+
+#overlay5 {
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .9000);
+    cursor: pointer;
+    z-index: 5;
+}
+
+#overlay6 {
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, .9000);
+    cursor: pointer;
+    z-index: 6;
+}
+
+/*over*/
+
+.over{
+    max-width: auto;
+    margin: auto;
+    padding: 100px 15px;
+}
+
+.over .content-picture{
+    max-width: 350px;
+    margin-right: 80px;
+}
+
+.over .content-picture img{
+    padding: 20px;
+    width: 100%;
+}
+
+.overy{
+    margin: 0 40px;
+
+}
+.overy .title-section{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #93ffa1;
+}
+.overy h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    color: #fff
+}
+.overy h2 span{
+    color: #93ffa1;
+}
+.overy h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px ;
+    letter-spacing: 1px;
+    color: #fff
+}
+.overy p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+#designs .fila .project img{
+    height: 300px;
+    width: 450px;
+}
+
+#designs .fila .project .info{
+    position: absolute;
+    left: 0;
+    background-color: #0e131b;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#designs .fila .project:hover .info{
+    opacity: 1;
+    bottom: 0;
+}
+/*Contact Section*/
+
+#contact{
+    max-width: auto;
+    margin: auto;
+    padding: 100px 15px;
+    background-color: #1e013f;
+    
+    
+}
+
+#contact .title-section{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #93ffa1;
+}
+
+#contact .conteiner{
+    max-width: 1100px;
+    margin: auto;
+    
+}
+
+#contact h2{
+    font-size: 60px;
+    color: #599876;
+    text-align: center;
+}
+
+#contact .conteiner-fila{
+    margin-bottom: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+#contact .conteiner i{
+    margin-left: 10px;
+    font-size: 30px;
+    color: #93ffa1;
+}
+
+#contact .info{
+    font-size: 20px;
+    margin-left: -100px;
+}
+
+footer{
+    background-image: linear-gradient(to bottom, #1e013f,#000);  
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #93ffa1;
+    display: inline-block;
+    margin: 5px;
+    font-size: 36px;
+}
